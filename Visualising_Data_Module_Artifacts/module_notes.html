@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.unit-notes {
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<header id="header">
+			<a href="../index.html" class="logo"><strong>Home</strong></a>
+		</header>
+		<div id="main" class="alt">
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Module notes</h1>
+					</header>
+					<ul class="actions">
+						<li><a href="#" class="button unit-link" data-target="unit-1">Unit 1</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-2">Unit 2</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-3">Unit 3</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-4">Unit 4</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-5">Unit 5</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-6">Unit 6</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button unit-link" data-target="unit-7">Unit 7</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-8">Unit 8</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-9">Unit 9</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-10">Unit 10</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-11">Unit 11</a></li>
+						<li><a href="#" class="button unit-link" data-target="unit-12">Unit 12</a></li>
+					</ul>
+					<div class="unit-notes" id="unit-1-notes">
+						<h2>Unit 1 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-2-notes">
+						<h2>Unit 2 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-3-notes">
+						<h2>Unit 3 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-4-notes">
+						<h2>Unit 4 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-5-notes">
+						<h2>Unit 5 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-6-notes">
+						<h2>Unit 6 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-7-notes">
+						<h2>Unit 7 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-8-notes">
+						<h2>Unit 8 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-9-notes">
+						<h2>Unit 9 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-10-notes">
+						<h2>Unit 10 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-11-notes">
+						<h2>Unit 11 Notes:</h2>
+						<p>......</p>
+					</div>
+					<div class="unit-notes" id="unit-12-notes">
+						<h2>Unit 12 Notes:</h2>
+						<p>......</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".unit-link").click(function (e) {
+				e.preventDefault();
+				var target = $(this).data("target");
+				$(".unit-notes").hide();
+				$("#" + target + "-notes").show();
+			});
+		});  
+	</script>
+</body>
+
+</html>
