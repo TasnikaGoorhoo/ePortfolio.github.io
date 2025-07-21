@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.unit-notes {
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<header id="header">
+			<a href="../index.html" class="logo"><strong>Home</strong></a>
+		</header>
+		<div id="main" class="alt">
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h1>Assignments</h1>
+					</header>
+					<ul class="actions">
+						<li><a href="#" class="button unit-link" data-target="unit-1">Assignment Notes</a></li>
+					</ul>
+					<div class="unit-notes" id="unit-1-notes">
+						<h2>Assignment Note</h2>
+						<p>Outcomes: <br>
+							1)Appreciate the value of data visualisation. <br>
+							2)Appreciate the basic principles of data visualisation.<br>
+							3)Know about different tools and techniques used for data visualisation.
+						</p>
+						<p>
+							The lecture cast Principles of Data Visualisation was insightful. I completed the formative
+							activity as well as the case study which was posted on the Module Wiki. This tapped into
+							communication with peers on the Wiki as well as easing into data visualisations and the
+							integral role it can play.
+							<a href="https://www.my-course.co.uk/mod/glossary/view.php?g=3904">View more details</a>.
+						</p>
+					</div>
+
+
+			</section>
+		</div>
+	</div>
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".unit-link").click(function (e) {
+				e.preventDefault();
+				var target = $(this).data("target");
+				$(".unit-notes").hide();
+				$("#" + target + "-notes").show();
+			});
+		});  
+	</script>
+</body>
+
+</html>
