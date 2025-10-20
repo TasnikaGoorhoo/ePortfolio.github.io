@@ -464,7 +464,7 @@ print(final_df)
 df.to_csv('cleandata.csv', index=False)
 </code></pre>
 
-							<h4>Appendix B1: Scripts for EDA of the cleaned dataset</h4>
+							<h4>Scripts for EDA of the cleaned dataset</h4>
 							<pre><code># Format Datatypes
 if 'last_review' in cdf.columns:
     cdf['last_review'] = pd.to_datetime(cdf['last_review'], errors='coerce')
